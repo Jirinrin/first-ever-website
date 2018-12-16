@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import "animate.css";
+
+/* Colour scheme: (dark to light)
+#FF5977
+#FF6699
+#FF89A5
+#FF8EB7
+#FFAACB
+#FFCCE1
+#FFDDEB
+#FFEAF2
+*/
+  
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  background-color: #FFCCE1;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  overflow-x: hidden!important;
+}
+
+body {
+  max-width: 800px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 100px 100px;
+  background-color: #FFEAF2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 600;
+  letter-spacing: 30px;
+  text-align: left;
+  margin: 0;
+  padding: 20px 0;
+  text-shadow: 5px 5px 0 #FFCCE1;
+  color: #FF8EB7;
+  position: relative;
+  z-index: 99;
+}
+
+h2.left {
+  font-size: 4vw;
+  font-weight: normal;
+  letter-spacing: 1vw;
+  text-align: left;
+  text-shadow: 0.2vw 0.2vw 0 #FF89A5;
+  color: #FFEAF2;
+  z-index: 100;
+  position: absolute;
+  left: 5vw;
+  user-select: none;
+}
+
+h2.right {
+  font-size: 4vw;
+  font-weight: normal;
+  letter-spacing: 1vw;
+  text-align: right;
+  text-shadow: 0.2vw 0.2vw 0 #FF89A5;
+  color: #FFEAF2;
+  z-index: 100;
+  position: absolute;
+  right: 5vw;
+  user-select: none;
+}
+
+h2.normal {
+  position: relative;
+  font-weight: bold;
+  left: 0; 
+  font-size: 4em;
+  letter-spacing:0.5vw;
+  color: #FF5977;
+  text-shadow: 0.1em 0.1em 0 #FFAACB;
+  z-index: 100;
+  position: relative;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+img {
+  width: 100%;
+  margin: 20px auto;  
+}
+
+img.icon {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 0 22px 22px 0px;
+  transition: filter 0.2s ease;
+}
+
+img.icon:hover {
+  filter: brightness(0.7) saturate(2.5) hue-rotate(10deg);
+  transition: filter 0.2s ease;
+}
+
+.social-media-plug {
+  min-height: 66px;
+}
+
+.fullscreen-width {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.left-triangle {
+  position: absolute;
+  left: 0;
+  right: 40%;
+  transition: transform 0.5s ease;
+}
+
+.left-triangle:hover {
+  transition: transform 0.2s ease;
+  transform: translateX(-2.5vw);
+}
+
+.right-triangle {
+  position: absolute;
+  left: 40%;
+  right: 0;
+  transition: transform 0.5s ease;
+}
+
+.right-triangle:hover {
+  transition: transform 0.2s ease;
+  transform: translateX(2.5vw);
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    margin: 0 50px;
+  }
+}
+
+a {
+  color: #FF5977;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFAACB;
+}
+
+@keyframes polygonic {
+  0%    {clip-path: polygon(78% 0, 100% 0, 100% 100%, 0 100%, 0 0);}
+  10%   {clip-path: polygon(42% 0, 100% 0, 100% 89%, 0 100%, 0 0);}
+  15%   {clip-path: polygon(36% 0, 100% 100%, 100% 21%, 0 83%, 0 0);}
+  25%   {clip-path: polygon(36% 0, 100% 100%, 100% 21%, 0 83%, 0 0);}
+  50%   {clip-path: polygon(21% 0, 100% 61%, 100% 68%, 0 22%, 0 0);}
+  97%   {clip-path: polygon(42% 0, 100% 0, 100% 35%, 0 100%, 0 0);}
+  100%  {clip-path: polygon(100% 2%, 100% 2%, 100% 100%, 0 83%, 0 19%);}
+}
+
+.cool-animation img {
+  animation: polygonic forwards 10s;
+  animation-delay: 2s;
+}
+
+@keyframes textfly {
+  0% {transform: translateX(-200%);}
+  100% {transform: translateX(0%);}
+}
+
+.fly-in h1 {
+  animation: textfly backwards 2s;
+  animation-delay: 12s;
+}
+
+#icon-jumble {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+img.moving-icon {
+  position: absolute;
+  width: 60px;
+  filter: brightness(1);
+  transition: filter 0.2s ease;
+}
+
+img.moving-icon:hover {
+  filter: brightness(0.7) saturate(2.5) hue-rotate(10deg);
+  transition: filter 0.2s ease;
+}
+
+svg.path {
+  stroke: red; 
+  stroke-width:2;
+}
