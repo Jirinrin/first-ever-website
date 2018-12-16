@@ -6,4 +6,4 @@ Though I wanted to make it spiffy and responsive, but then the whole thing start
 
 I did remove most of the social media links for privacy reasons.
 
-[Click here to see it in action](https://www.modest-ritchie-26c33d.netlify.com)
+[Click here to see it in action](https://modest-ritchie-26c33d.netlify.com)
