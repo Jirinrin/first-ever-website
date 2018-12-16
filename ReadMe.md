@@ -5,3 +5,5 @@ I went with a *certain* aesthetic. Hahah. Not too unsatisfied with how it came o
 Though I wanted to make it spiffy and responsive, but then the whole thing started to die slowly as some small glitchings caused the whole page to look like crap  ¯\\\_(ツ)\_/¯
 
 I did remove most of the social media links for privacy reasons.
+
+[Click here to see it in action](modest-ritchie-26c33d.netlify.com)
